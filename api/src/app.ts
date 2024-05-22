@@ -1,8 +1,9 @@
-import 'express-async-errors';
-import express, { Request, Response, NextFunction } from 'express';
 import cors from 'cors';
-import morgan from 'morgan';
+import express from 'express';
+import 'express-async-errors';
 import helmet from 'helmet';
+import morgan from 'morgan';
+import skillrouter from './routers/SkillRouter';
 
 const app = express();
 
@@ -14,12 +15,7 @@ app.use(helmet());
 
 app.use(express.json());
 
-app.use((req: Request, res: Response, next: NextFunction) => {
-    res.send("Hello World");
-})
 
-app.use((error: Error, req: Request, res: Response, next: NextFunction) => {
-    res.status(500).send(error.message);
-})
+app.use('/skills/', skillrouter);
 
 export default app;
