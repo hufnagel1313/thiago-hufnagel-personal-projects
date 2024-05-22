@@ -4,7 +4,6 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx nodemon src/server.ts --watch 'src/' -e ts",
-    "compile": "npx tsc",
     "build": "npx tsc",
     "start": "node ./dist/server.js"
   },
