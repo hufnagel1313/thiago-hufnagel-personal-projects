@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "npx nodemon src/server.ts --watch 'src/' -e ts",
+    "dev": "npx nodemon src/app.ts --watch 'src/' -e ts",
     "build": "npx tsc",
-    "start": "node ./dist/server.js"
+    "start": "node ./dist/app.js"
   },
   "keywords": [],
   "author": "",
