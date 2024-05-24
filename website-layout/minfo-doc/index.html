@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Specific Meta
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="keyword" 
+        content="Documentation for resume, cv, portfolio, vcard, responsive, retina, jquery, css3, tailwindcss, CV, creative, designer, developer, online cv, online resume, powerful portfolio, professional, landing page">
+    <meta name="description" 
+        content="Minfo vCard/Resume TailwindCSS HTML Template">
+    <meta name="author" content="ThemeArray">
+
+    <!-- Site Title
+    ================================================== -->
+    <title>Documentation for Minfo Resume Tailwind CSS</title>
+
+    <!-- Site Favicon
+    ================================================== -->
+    <link rel="shortcut icon" href="assets/media/favicon.png" sizes="any" >
+
+    <!-- Custom Fonts
+    ================================================== -->
+    <link rel="stylesheet" href="assets/font/stylesheet.css">
+
+    <!-- All CSS Here
+    ================================================== -->
+    <link rel="stylesheet" href="assets/css/fontAwesome5Pro.css">
+    <link rel="stylesheet" href="assets/css/glightbox.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Preloader Start -->
+    <div class="preloader flex items-center justify-center fixed inset-0 z-9999 bg-slate-100 dark:bg-black">
+        <div class="w-28 h-28 rounded-full border-4 border-transparent border-t-primary border-b-primary animate-preloader"></div>
+    </div>
+    <!-- Preloader End -->
+
+    <div class="fixed-header fixed top-0 left-0 right-0 z-1024 bg-white border-b py-2 transition duration-300">
+        <div class="nav flex items-center gap-x-4 px-4 md:px-12">
+            <button type="button" class="btn sidebar_toggle w-10
+             space-y-3 lg:hidden">
+                <span class="h-px bg-slate-700 w-2/3 block"></span>
+                <span class="h-px bg-slate-700 w-full block"></span>
+                <span class="h-px bg-slate-700 w-1/2 block"></span>
+            </button>
+            <div class="avatar-item w-16 h-16 rounded-full border flex-center">
+                <img src="assets/media/favicon.png" alt="">
+            </div>
+            <h6 class="font-semibold text-olive text-xl max-sm:hidden">
+                MINFO
+            </h6>
+            <ul class="right-menu ml-auto flex items-center space-x-4">
+                <li class="max-sm:hidden">
+                    <a href="#" class="px-4 py-4 inline-block border rounded-lg leading-none bg-white transition duration-300 hover:bg-black hover:text-white whitespace-nowrap text-sm">
+                        Request Support
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="px-4 py-4 inline-block border rounded-lg leading-none bg-dark text-white transition duration-300 hover:bg-black hover:text-white whitespace-nowrap text-sm">
+                        Purchase Now
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="documentaton-wrapper mt-20 py-10">
+        <div class="lg:grid lg:grid-cols-12 relative space-y-8">
+
+            <!-- Left Sidebar Start -->
+            <div class="sidebar lg:col-span-3 lg:max-2xl:row-start-1 lg:max-2xl:row-end-3 2xl:col-span-2">
+                <div class="sticky top-28 px-4 xl:px-10 2xl:pr-5 transition-all duration-200 h-[calc(100vh_-_8rem)] overflow-y-auto">
+                    <h3 class="nav_title bg-dark text-white rounded-sm px-4 py-2 mb-2 font-semibold">DOC NAVIGATION</h3>
+    
+                    <ul class="list-unstyled nav-sidebar doc-nav space-y-1.5">
+                        <li class="nav-item active">
+                            <a href="#getting_started" class="nav-link px-4 py-1.5 flex items-center bg-slate-100 relative z-10"
+                            >
+                                Getting Started
+                                <!-- <span class="icon ml-auto">
+                                    <i class="fal fa-plus"></i>
+                                    <i class="fal fa-minus"></i>
+                                </span> -->
+                            </a>
+                            <ul class="list-unstyled dropdown_nav pl-4 my-1.5">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link py-0.5 flex items-center gap-2 transition-all duration-200 hover:text-primary">
+                                        <i class="fal fa-angle-right"></i>
+                                        Requirements
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link py-0.5 flex items-center gap-2 transition-all duration-200 hover:text-primary">
+                                        <i class="fal fa-angle-right"></i>
+                                        What's Included
+                                    </a>
+                                </li>
+                            </ul>
+                            
+                        </li>
+                        <li class="nav-item">
+                            <a href="#backgroundsColors" class="nav-link px-4 py-1.5 flex items-center bg-slate-100 relative z-10">
+                                Background & Colors
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#basic_site_editing" class="nav-link px-4 py-1.5 flex items-center bg-slate-100 relative z-10">
+                                Basic Site Setting
+                            </a>
+                            <ul class="list-unstyled dropdown_nav pl-4 my-1.5 border-l">
+                                <li class="nav-item">
+                                    <a href="#change_site_title" class="nav-link py-0.5 flex items-center gap-2 transition-all duration-200 hover:text-primary">
+                                        <i class="fal fa-angle-right"></i>
+                                        Change Site title & Favicon
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#change_site_logo" class="nav-link py-0.5 flex items-center gap-2 transition-all duration-200 hover:text-primary">
+                                        <i class="fal fa-angle-right"></i>
+                                        Change Site Logo
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#customize_menu" class="nav-link py-0.5 flex items-center gap-2 transition-all duration-200 hover:text-primary">
+                                        <i class="fal fa-angle-right"></i>
+                                        Customize Menu
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#sidebar_skill" class="nav-link py-0.5 flex items-center gap-2 transition-all duration-200 hover:text-primary">
+                                        <i class="fal fa-angle-right"></i>
+                                        Sidebar Skill Circle
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#customize_section" class="nav-link px-4 py-1.5 flex items-center bg-slate-100 relative z-10">
+                                Customize Section
+                            </a>
+                            <ul class="list-unstyled dropdown_nav pl-4 my-1.5 border-l">
+                                <li class="nav-item">
+                                    <a href="#customize_hero" class="nav-link py-0.5 flex items-center gap-2 transition-all duration-200 hover:text-primary">
+                                        <i class="fal fa-angle-right"></i>
+                                        Hero Section
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#customize_about" class="nav-link py-0.5 flex items-center gap-2 transition-all duration-200 hover:text-primary">
+                                        <i class="fal fa-angle-right"></i>
+                                        About Section
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#customize_skill" class="nav-link py-0.5 flex items-center gap-2 transition-all duration-200 hover:text-primary">
+                                        <i class="fal fa-angle-right"></i>
+                                        Skill Section
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#customize_portfolio" class="nav-link py-0.5 flex items-center gap-2 transition-all duration-200 hover:text-primary">
+                                        <i class="fal fa-angle-right"></i>
+                                        Portfolio Section
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#customize_contact" class="nav-link py-0.5 flex items-center gap-2 transition-all duration-200 hover:text-primary">
+                                        <i class="fal fa-angle-right"></i>
+                                        Contact Section
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#credits" class="nav-link px-4 py-1.5 flex items-center bg-slate-100 relative z-10">
+                                Sources & Credits
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#support" class="nav-link px-4 py-1.5 flex items-center bg-slate-100 relative z-10">
+                                Support
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#refundPolicy" class="nav-link px-4 py-1.5 flex items-center bg-slate-100 relative z-10">
+                                Refund Policy
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#changelogs" class="nav-link px-4 py-1.5 flex items-center bg-slate-100 relative z-10">
+                                Change Logs
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#copyright" class="nav-link px-4 py-1.5 flex items-center bg-slate-100 relative z-10">
+                                Copyright & License
+                            </a>                            
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- Main content Start -->
+            <div class="text-content lg:col-span-9 2xl:col-span-8">
+
+                <div class="doc-section px-6" id="getting_started">
+                    <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                        Getting Started
+                    </h2>
+                    <p class="my-2">Welcome to <b>Minfo</b> TailwindCSS Template Documentation! We would like to thank you for choosing our template - Minfo.</p>
+                    <p class="my-2">
+                        Minfo - Tailwind CSS Personal Resume/vCard Template can be used for many purposes. It's a creative, minimal and clean design. Also It's suitable for Designer, Developer, Specialist, Content Writer, Instructor, Photographer, Freelancer, Software Engineer, Teacher or others expert who Show their professional projects and services in digital way. It's 100% responsive and Ultra Super Fast beacause it's made with Latest Tailwind CSS.
+                    </p>
+                    <p class="my-2">
+                        Please feel free to get back to us in case if you are having any question or feedback.
+                    </p>
+                    <div class="template-info bg-slate-900 p-4 md:p-10 rounded-lg text-white my-12 overflow-x-auto">
+                        
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Template name</td>
+                                    <td class="px-12">:</td>
+                                    <td>Minfo - Tailwind CSS Personal Resume/vCard Template</td>
+                                </tr>
+                                <tr>
+                                    <td>Version</td>
+                                    <td class="px-12">:</td>
+                                    <td>1.1</td>
+                                </tr>
+                                <tr>
+                                    <td>Author</td>
+                                    <td class="px-12">:</td>
+                                    <td>
+                                        <a href="#">
+                                            ThemeArray
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Support</td>
+                                    <td class="px-12">:</td>
+                                    <td>
+                                        <a href="mailto:themearray@gmail.com">
+                                            themearray@gmail.com
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>
+                    <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                        Prerequisites : How to edit tailwind css on your machine
+                    </h2>
+
+                    <p class="my-2">
+                        There are system requirements in order to install and setup minfo template and its components properly. Make sure that you are installed node.js. and you're using latest version of npm.
+                    </p>
+                    <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                        <a href="assets/media/download-node.png" class="glightbox">
+                            <img src="assets/media/download-node.png" class="img-fluid rounded-lg" alt="Minfo HTML">
+                        </a>
+                    </div>
+
+                    <br><br>
+
+                    <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                        Verify NPM
+                    </h2>
+                    <p class="my-2">
+                        Open a command prompt (or PowerShell), and enter the following:
+                    </p>
+<pre class="bg-slate-900 text-white p-4 my-2 rounded-md">
+<code>node -v</code>
+</pre>
+                    <p class="my-2">
+                        The system should display the Node.js version installed on your system. You can do the same for NPM:
+                    </p>
+<pre class="bg-slate-900 text-white p-4 my-2 rounded-md">
+<code>npn -v</code>
+</pre>
+                    <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                        <a href="assets/media/verify-node.png" class="glightbox">
+                            <img src="assets/media/verify-node.png" class="img-fluid rounded-lg" alt="Minfo HTML">
+                        </a>
+                    </div>
+
+                    <br><br>
+
+                    <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                        How to edit tailwindcss on your own machine
+                    </h2>
+
+                    <p class="my-2">
+                        To use Tailwind CSS on your computer, you will need to install it as a development dependency in your project. Here are the steps you can follow to do this: 
+                    </p>
+                    <br>
+                    <ul class="list-decimal ml-4">
+                        <li>
+                            Make sure to have <a class="text-red-500" href="https://nodejs.org/" target="_blank">Node.js</a> installed &amp; running on your computer. If you already have installed Node on your computer, you can skip this step if your existing node version is greater than 18. We suggest you to use LTS version of Node.js.
+                        </li>
+                        <li>
+                            Open project on your editor
+                        </li>
+                        <li>
+                            Open the terminal in the project root directory
+                        </li>
+                        <li>
+                            Run the install command to install all node module package:
+                            <br>
+<pre class="bg-slate-900 text-white p-4 my-2 rounded-md">
+<code>npm install</code>
+</pre>
+                        </li>
+                        <li>
+                            To build css run the command in your terminal
+                            <br>
+<pre class="bg-slate-900 text-white p-4 my-2 rounded-md">
+<code>npm run watch</code>
+</pre>
+                        </li>
+        
+                    </ul>
+                    <br>
+                    <p class="my-2">
+                        After successfully done the above steps, you can run the following commands on terminal/command prompt from the root directory <b>( InPro-resume )</b> of the project to run the project locally or build for production use:
+                    </p>
+                    
+                    <br>
+        
+                    <ul class="list-decimal space-y-6 ml-4">
+                        <li>
+                            Open project on your editor
+                            
+                            <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                                <a href="assets/media/select-template-folder.png" class="glightbox">
+                                    <img src="assets/media/select-template-folder.png" class="img-fluid rounded-lg" alt="Select Template Folder">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            Open the terminal as a root directory and run the command <code class="bg-yellow-300 px-4 py-2 rounded-md"> npm install </code>
+                            
+                            <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                                <a href="assets/media/open-terminal.png" class="glightbox">
+                                    <img src="assets/media/open-terminal.png" class="img-fluid rounded-lg" alt="Open Terminal and run npm init cmd">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            To build css run the command in your terminal <code class="bg-yellow-300 px-4 py-2 rounded-md"> npm run watch </code>
+                            
+                            <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                                <a href="assets/media/run-build-cmd.png" class="glightbox">
+                                    <img src="assets/media/run-build-cmd.png" class="img-fluid rounded-lg" alt="Run tailwindcss build command">
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <br><br>
+
+                    <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                        What's Included
+                    </h2>
+                    <p class="my-2">
+                        After purchasing <b>Minfo</b> template on templateforest.net with your Envato account, go to your Download page. <br> You can choose to download <b>Minfo</b> template contains the following files:
+                    </p>
+                    <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                        <a href="assets/media/whats-included.png" class="glightbox">
+                            <img src="assets/media/whats-included.png" class="img-fluid rounded-lg" alt="Minfo HTML">
+                        </a>
+                    </div>
+
+                    <br><br>
+                    <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                        Folder Structure:
+                    </h2>
+                    <ul class="border-dashed border-l">
+                        <li class="before:content-[''] before:border-t before:border-dashed before:inline-block before:w-8 before:relative before:-top-1">
+                            <i class="fas fa-folder text-yellow-500 mr-2"></i> <span class="font-semibold">Minfo</span>
+                            <p class="ml-8">Main (root) folder with index HTML files, assets and src folder with configuration files.</p>
+        
+                            
+                            <ul class="ml-8 mb-4 space-y-4 border-dashed border-l">
+                                <li class="before:content-[''] before:border-t before:border-dashed before:inline-block before:w-8 before:relative before:-top-1">
+                                    <i class="fas fa-folder text-yellow-500 mr-2"></i> <span class="font-semibold">assets</span>
+                                    <p class="ml-8">Template resource files are stored in assets folder</p>
+        
+                                    <ul class="ml-8 space-y-2 border-dashed border-l">
+                                        <li class="before:content-[''] before:border-t before:border-dashed before:inline-block before:w-8 before:relative before:-top-1">
+                                            <i class="fas fa-folder text-yellow-500 mr-2"></i> <span class="font-semibold">css</span>
+                                            <p class="ml-8">Template <code class="bg-black px-2 py-2 pt-1 rounded text-white">style.css</code> and other plugins CSS files.</p>
+                                        </li>
+                                        <li class="before:content-[''] before:border-t before:border-dashed before:inline-block before:w-8 before:relative before:-top-1">
+                                            <i class="fas fa-folder text-yellow-500 mr-2"></i> <span class="font-semibold">Img</span>
+                                            <p class="ml-8">Contains images, svg icons, logo and all other media files stored that are used in template.</p>
+                                        </li>
+                                        <li class="before:content-[''] before:border-t before:border-dashed before:inline-block before:w-8 before:relative before:-top-1">
+                                            <i class="fas fa-folder text-yellow-500 mr-2"></i> <span class="font-semibold">JS</span>
+                                            <p class="ml-8">Template <code class="bg-black px-2 py-2 pt-1 rounded text-white">script.js</code> and other js library</p>
+                                        </li>
+                                    </ul>
+        
+                                </li>                  
+                            </ul>
+                            <ul>
+                                <li class="before:content-[''] before:border-t before:border-dashed before:inline-block before:w-8 before:relative before:-top-1">
+                                    <i class="fas fa-folder text-yellow-500 mr-2"></i> <span class="font-semibold">src</span>
+                                    <p class="ml-8">TailwindCSS Main Source File</p>
+        
+                                    <ul class="ml-8 mb-4 space-y-2 border-dashed border-l">
+                                        <li class="before:content-[''] before:border-t before:border-dashed before:inline-block before:w-8 before:relative before:-top-1">
+                                            <i class="far fa-file text-yellow-500 mr-2"></i> <span class="font-semibold">tailwind.css</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="before:content-[''] before:border-t before:border-dashed before:inline-block before:w-8 before:relative before:-top-1">
+                                    <i class="far fa-file text-yellow-500 mr-2"></i> <span class="font-semibold">contact-form.php</span>
+                                </li>
+                                <li class="before:content-[''] before:border-t before:border-dashed before:inline-block before:w-8 before:relative before:-top-1">
+                                    <i class="far fa-file text-yellow-500 mr-2"></i> <span class="font-semibold">package.json</span>
+                                </li>
+                                <li class="before:content-[''] before:border-t before:border-dashed before:inline-block before:w-8 before:relative before:-top-1">
+                                    <i class="far fa-file text-yellow-500 mr-2"></i> <span class="font-semibold">package-lock.json</span>
+                                </li>
+                                <li class="before:content-[''] before:border-t before:border-dashed before:inline-block before:w-8 before:relative before:-top-1">
+                                    <i class="far fa-file text-yellow-500 mr-2"></i> <span class="font-semibold">tailwind.config.js</span>
+                                </li>
+                                <li class="before:content-[''] before:border-t before:border-dashed before:inline-block before:w-8 before:relative before:-top-1">
+                                    <i class="far fa-file text-yellow-500 mr-2"></i> <span class="font-semibold">postcss.config.js</span>
+                                </li>
+                            </ul>    
+                        </li>
+                    </ul>
+
+                    <br><br>
+                    <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                        HTML Structure:
+                    </h2>
+                    <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                        <a href="assets/media/html-structure.png" class="glightbox">
+                            <img src="assets/media/html-structure.png" class="img-fluid rounded-lg" alt="Minfo HTML Structure">
+                        </a>
+                    </div>
+
+                    <br><br>
+
+                    <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                        CSS Structure:
+                    </h2>
+                    <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                        <a href="assets/media/css-structure.png" class="glightbox">
+                            <img src="assets/media/css-structure.png" class="img-fluid rounded-lg" alt="InPro CSS Structure">
+                        </a>
+                    </div>
+
+                    <br><br>
+
+                    <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                        JS Structure:
+                    </h2>
+                    <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                        <a href="assets/media/js-structure.png" class="glightbox">
+                            <img src="assets/media/js-structure.png" class="img-fluid rounded-lg" alt="InPro js Structure">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="doc-section px-6" id="backgroundsColors">
+                    <br>
+                    <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                        Background and Color Mode
+                    </h2>
+                    <p class="my-2">
+                        <b>Minfo</b> has available Light and Dark Color modes and its super easy to change in your template.
+                    </p>
+                    <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                        <a href="assets/media/colorModes.png" class="glightbox">
+                            <img src="assets/media/colorModes.png" class="img-fluid rounded-lg" alt="Minfo HTML">
+                        </a>
+                    </div>
+                    <p class="my-2">
+                        By default <b>Minfo</b> designed for light version and to change the UI to dark is simple. Just add a class to the <b>dark</b>. Ex- <code class="bg-black px-2 py-2 pt-1 rounded text-white">&lt;html class="dark"&gt;</code>.
+                    </p>
+                    <p class="my-2">
+                        <span class="text-white bg-sky-500 px-3 py-1 rounded-sm">N.B:</span> This template has the advantage of using separate images for the dark and light versions of the sidebar and hero section images.
+                    </p>
+                    <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                        <a href="assets/media/separate-img-using.png" class="glightbox" title="Separate Image using in sidebar card">
+                            <img src="assets/media/separate-img-using.png" class="img-fluid rounded-lg" alt="Minfo HTML">
+                        </a>
+                    </div>
+                    <p class="my-2">
+                        On Hero image
+                    </p>
+                    <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                        <a href="assets/media/separate-img-using-2.png" class="glightbox" title="Separate Image using in Hero Section">
+                            <img src="assets/media/separate-img-using-2.png" class="img-fluid rounded-lg" alt="Minfo HTML">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="doc-section px-6" id="basic_site_editing">
+                    <br>
+                    <div id="change_site_title">
+                        <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                            Change site title & favicon
+                        </h2>
+    
+                        <p class="my-2">
+                            To change your Site title and Favicon open the <b>Minfo</b> in your editor and go to the location by following screenshot which are given bellow.
+                        </p>
+                        <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                            <a href="assets/media/change-site-title.png" class="glightbox">
+                                <img src="assets/media/change-site-title.png" class="img-fluid rounded-lg" alt="Minfo HTML">
+                            </a>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div id="change_site_logo">
+                        <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                            Change logo / User thumbnail image
+                        </h2>
+    
+                        <p class="my-2">
+                            To change Left Sidebar Thumbnail image and logo image from right side menu open the <b>Minfo</b> in your editor and go to the marked section by following screenshot given bellow.
+                        </p>
+                        <div class="grid gap-6 md:grid-cols-2">
+                            <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                                <a href="assets/media/left-sidebar-image.png" class="glightbox">
+                                    <img src="assets/media/left-sidebar-image.png" class="img-fluid rounded-lg" alt="Minfo HTML">
+                                </a>
+                            </div>
+                            <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                                <a href="assets/media/right-sidebar-logo.png" class="glightbox">
+                                    <img src="assets/media/right-sidebar-logo.png" class="img-fluid rounded-lg" alt="Minfo HTML">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div id="customize_menu">
+                        <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                            Change / Customize site menu
+                        </h2>
+    
+                        <p class="my-2">
+                            To customize menu do the following:
+                        </p>
+                        <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                            <a href="assets/media/customize-site-menu.png" class="glightbox">
+                                <img src="assets/media/customize-site-menu.png" class="img-fluid rounded-lg" alt="Minfo HTML">
+                            </a>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div id="sidebar_skill">
+                        <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                            Customize sidebar skill circle
+                        </h2>
+    
+                        <p class="my-2">
+                            To customize animated skill bar percent:
+                        </p>
+                        <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                            <a href="assets/media/sidebar-skill.png" class="glightbox">
+                                <img src="assets/media/sidebar-skill.png" class="img-fluid rounded-lg" alt="Minfo HTML">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="doc-section px-6" id="customize_section">
+                    <br>
+                    <div id="customize_hero">
+                        <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                            Change Hero Infomation
+                        </h2>
+                        <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                            <a href="assets/media/hero-content.png" class="glightbox">
+                                <img src="assets/media/hero-content.png" class="img-fluid rounded-lg" alt="Hero Content">
+                            </a>
+                        </div>
+
+                        <br>
+                        
+                        <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                            Trusted Company Slider Image
+                        </h2>
+                        <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                            <a href="assets/media/trusted-company.png" class="glightbox">
+                                <img src="assets/media/trusted-company.png" class="img-fluid rounded-lg" alt="Trusted Company">
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="customize_about">
+                        <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                            Change About Infomation
+                        </h2>
+                        <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                            <a href="assets/media/about-info.png" class="glightbox">
+                                <img src="assets/media/about-info.png" class="img-fluid rounded-lg" alt="Minfo Html">
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="customize_skill">
+                        <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                            Change Skill Infomation
+                        </h2>
+                        <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                            <a href="assets/media/change-skill-info.png" class="glightbox">
+                                <img src="assets/media/change-skill-info.png" class="img-fluid rounded-lg" alt="Minfo Html">
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="customize_portfolio">
+                        <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                            Customize Project / Portfolio
+                        </h2>
+                        <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                            <a href="assets/media/portfolio-item.png" class="glightbox">
+                                <img src="assets/media/portfolio-item.png" class="img-fluid rounded-lg" alt="Minfo Html">
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="customize_contact">
+                        <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                            Change Contact Infomation
+                        </h2>
+                        <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                            <a href="assets/media/contact-info.png" class="glightbox">
+                                <img src="assets/media/contact-info.png" class="img-fluid rounded-lg" alt="Minfo Html">
+                            </a>
+                        </div>
+                        <br>
+                        <h2 class="font-semibold text-2xl mb-4">
+                            Change Contact form
+                        </h2>
+                        <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                            <a href="assets/media/contact-form.png" class="glightbox">
+                                <img src="assets/media/contact-form.png" class="img-fluid rounded-lg" alt="Minfo Html">
+                            </a>
+                        </div>
+                        <br>
+                        <h2 class="font-semibold text-2xl mb-4">
+                            Change Contact email [php]
+                        </h2>
+                        <div class="popup-img p-2 lg:p-4 2xl:p-6 border rounded-lg mt-4">
+                            <a href="assets/media/contact-form-action.png" class="glightbox">
+                                <img src="assets/media/contact-form-action.png" class="img-fluid rounded-lg" alt="Minfo Html">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="doc-section px-6" id="credits">
+                    <br>
+                    <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                        Sources & Credits
+                    </h2>
+
+                    <ul>
+                        <li class="credits-list">
+                            <a href="https://fonts.google.com/" class="flex items-center gap-x-4" target="_blank">
+                                <svg width="16" height="14" viewBox="0 0 16 14" class="fill-primary" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.9158 1.3348C11.4762 5.41233 8.01122 11.0368 6.95801 13.7301C6.93058 13.8106 6.85196 13.8764 6.75871 13.8892C6.74591 13.902 6.73128 13.902 6.71848 13.902C6.63803 13.902 6.5722 13.8746 6.53197 13.8215L0.0006107 7.18413C-0.0396161 7.13111 1.92052 5.3849 2.01378 5.45072L5.59944 8.26294C6.99824 6.62279 10.4248 2.91827 15.1954 0C15.2886 0 15.9816 1.04041 15.9816 1.04041C16.0218 1.14829 15.9944 1.26897 15.9158 1.3348Z"/>
+                                </svg>
+                                Google Fonts
+                            </a>
+                        </li>
+                        <li class="credits-list">
+                            <a href="https://swiperjs.com/get-started/" class="flex items-center gap-x-4" target="_blank">
+                                <svg width="16" height="14" viewBox="0 0 16 14" class="fill-primary" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.9158 1.3348C11.4762 5.41233 8.01122 11.0368 6.95801 13.7301C6.93058 13.8106 6.85196 13.8764 6.75871 13.8892C6.74591 13.902 6.73128 13.902 6.71848 13.902C6.63803 13.902 6.5722 13.8746 6.53197 13.8215L0.0006107 7.18413C-0.0396161 7.13111 1.92052 5.3849 2.01378 5.45072L5.59944 8.26294C6.99824 6.62279 10.4248 2.91827 15.1954 0C15.2886 0 15.9816 1.04041 15.9816 1.04041C16.0218 1.14829 15.9944 1.26897 15.9158 1.3348Z"/>
+                                </svg>
+                                SwiperJs
+                            </a>
+                        </li>
+                        <li class="credits-list">
+                            <a href="https://isotope.metafizzy.co/" class="flex items-center gap-x-4" target="_blank">
+                                <svg width="16" height="14" viewBox="0 0 16 14" class="fill-primary" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.9158 1.3348C11.4762 5.41233 8.01122 11.0368 6.95801 13.7301C6.93058 13.8106 6.85196 13.8764 6.75871 13.8892C6.74591 13.902 6.73128 13.902 6.71848 13.902C6.63803 13.902 6.5722 13.8746 6.53197 13.8215L0.0006107 7.18413C-0.0396161 7.13111 1.92052 5.3849 2.01378 5.45072L5.59944 8.26294C6.99824 6.62279 10.4248 2.91827 15.1954 0C15.2886 0 15.9816 1.04041 15.9816 1.04041C16.0218 1.14829 15.9944 1.26897 15.9158 1.3348Z"/>
+                                </svg>
+                                jQuery CD Headlines
+                            </a>
+                        </li>
+                        <li class="credits-list">
+                            <a href="https://www.freepik.com/" class="flex items-center gap-x-4" target="_blank">
+                                <svg width="16" height="14" viewBox="0 0 16 14" class="fill-primary" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.9158 1.3348C11.4762 5.41233 8.01122 11.0368 6.95801 13.7301C6.93058 13.8106 6.85196 13.8764 6.75871 13.8892C6.74591 13.902 6.73128 13.902 6.71848 13.902C6.63803 13.902 6.5722 13.8746 6.53197 13.8215L0.0006107 7.18413C-0.0396161 7.13111 1.92052 5.3849 2.01378 5.45072L5.59944 8.26294C6.99824 6.62279 10.4248 2.91827 15.1954 0C15.2886 0 15.9816 1.04041 15.9816 1.04041C16.0218 1.14829 15.9944 1.26897 15.9158 1.3348Z"/>
+                                </svg>
+                                Freepik
+                            </a>
+                        </li>
+                        <li class="credits-list">
+                            <a href="https://mattboldt.com/demos/typed-js/" class="flex items-center gap-x-4" target="_blank">
+                                <svg width="16" height="14" viewBox="0 0 16 14" class="fill-primary" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.9158 1.3348C11.4762 5.41233 8.01122 11.0368 6.95801 13.7301C6.93058 13.8106 6.85196 13.8764 6.75871 13.8892C6.74591 13.902 6.73128 13.902 6.71848 13.902C6.63803 13.902 6.5722 13.8746 6.53197 13.8215L0.0006107 7.18413C-0.0396161 7.13111 1.92052 5.3849 2.01378 5.45072L5.59944 8.26294C6.99824 6.62279 10.4248 2.91827 15.1954 0C15.2886 0 15.9816 1.04041 15.9816 1.04041C16.0218 1.14829 15.9944 1.26897 15.9158 1.3348Z"/>
+                                </svg>
+                                Circle Progress
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <div class="doc-section px-6" id="support">
+                    <br>
+                    <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                        Clients Support Desk
+                    </h2> 
+                    <p>
+                        Please remember you have purchased a very affordable template and you have not paid for a full-time web design agency. Occasionally we will help with small tweaks, but these requests will be put on a higher priority due to their nature. Support is also 100% optional and we provide it for your connivence, so please be patient, polite and respectful. However We will be more than happy to assist you.
+                    </p>
+                    <br>
+                    <p>Please visit our <a href="https://themeforest.net/user/themearray/" class="underline text-primary underline-offset-4">profile page</a> or ask question <a href="mailto:themearray@gmail.com" class="underline text-primary underline-offset-4">@themearray</a> </p>
+
+                    <br>
+                    <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                        Support for our items includes:
+                    </h2>
+                    <ul class="list-disc ml-8">
+                        <li>Responding to questions or problems regarding the item and its features</li>
+                        <li>Fixing bugs and reported issues</li>
+                        <li>Providing updates to ensure compatibility with new software versions</li>
+                    </ul>
+                    <br>
+                    <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                        Before seeking support, please...
+                    </h2>
+                    <ul class="list-disc ml-8">
+                        <li>Make sure your question is a valid Template Issue and not a customization request.</li>
+                        <li>Make sure you have read through the documentation and any related video guides before asking support on how to accomplish a task.</li>
+                        <li>Try disabling any active plugins to make sure there isn't a conflict with a plugin. And if there is this way you can let us know.</li>
+                        <li>If you have customized your Template and now have an issue, back-track to make sure you didn't make a mistake. If you have made changes and can't find the issue, please provide us with your changelog.</li>
+                        <li>Almost 80% of the time we find that the solution to people's issues can be solved with a simple "Google Search". You might want to try that before seeking support. You might be able to fix the issue yourself much quicker than we can respond to your request.</li>
+                        <li>Make sure to state the name of the Template you are having issues with when requesting support via ThemeForest.</li>
+                    </ul>
+                </div>
+
+
+                <div class="doc-section px-6" id="refundPolicy">
+                    <br>
+                    <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                        Refund Policy
+                    </h2>
+                    <p>Read this <a href="https://themeforest.net/page/customer_refund_policy" target="_blank" class="underline text-primary underline-offset-4">Article</a> before asking for a refund.</p>
+                    <br>
+                    <p>
+                        The refund request will not be accepted in the following cases by the article:
+                    </p>
+                    <ul class="list-disc ml-8 my-12">
+                        <li class="">You don't want it after you've downloaded it</li>
+                        <li class="">The item did not meet your expectations or you feel the item is of low quality</li>
+                        <li class="">You simply change your mind</li>
+                        <li class="">You bought an item by mistake</li>
+                        <li class="">You do not have sufficient expertise to use the item</li>
+                        <li class="">You claim that you are entitled to a refund but do not provide sufficient information as to why you are entitled to a refund</li>
+                        <li class="">You can no longer access the item because it has been removed or the author who previously provided the item is no longer active on our platform (we advise you to download items as soon as you have purchased them to avoid this situation).</li>
+                      </ul>
+                </div>
+
+
+                <div class="doc-section px-6" id="changelogs">
+                    <br>
+                    <h2 class="font-semibold text-2xl lg:text-3xl mb-4">
+                        Change Log
+                    </h2>
+<pre class="bg-dark text-slate-200 py-8 rounded-lg w-full overflow-x-auto">
+<code>
+    -----------------------------------------------------
+    Version 1.0 - 16 January 2024
+    -----------------------------------------------------
+    - Initial Release Minfo-Resume
+    - Upadate all plugins
+    - Improve site speed and image optimization
+    - Improve Responsive issues
+    - Product design quality enhanced
+
+    -----------------------------------------------------
+    Version 1.1 - 06 February 2024
+    -----------------------------------------------------
+    - Light Mode published
+    - Some css bug fixed
+    - Speed optimized
+</code>
+</pre>
+                </div>
+
+                <div class="doc-section px-6" id="copyright">
+                    <br>
+                    <h2 class="font-bold text-2xl mb-2">
+                        Clients Support Desk
+                    </h2>
+                    <p>
+                        Please remember you have purchased a very affordable template and you have not paid for a full-time web design agency. Occasionally we will help with small tweaks, but these requests will be put on a higher priority due to their nature. Support is also 100% optional and we provide it for your connivence, so please be patient, polite and respectful. However We will be more than happy to assist you.
+                    </p>
+                    <br>
+                    <p>Please visit our <a href="https://themeforest.net/user/themearray/" class="underline text-primary underline-offset-4">profile page</a> or ask question <a href="mailto:themearray@gmail.com" class="underline text-primary underline-offset-4">@themearray</a> </p>
+        
+                    <br>
+                    <h2 class="font-bold text-2xl mb-2">Support for our items includes:</h2>
+                    <ul class="list-disc ml-8">
+                        <li>Responding to questions or problems regarding the item and its features</li>
+                        <li>Fixing bugs and reported issues</li>
+                        <li>Providing updates to ensure compatibility with new software versions</li>
+                    </ul>
+                    <br>
+                    <h2 class="font-bold text-2xl mb-2">Before seeking support, please...</h2>
+                    <ul class="list-disc ml-8">
+                        <li>Make sure your question is a valid Template Issue and not a customization request.</li>
+                        <li>Make sure you have read through the documentation and any related video guides before asking support on how to accomplish a task.</li>
+                        <li>Try disabling any active plugins to make sure there isn't a conflict with a plugin. And if there is this way you can let us know.</li>
+                        <li>If you have customized your Template and now have an issue, back-track to make sure you didn't make a mistake. If you have made changes and can't find the issue, please provide us with your changelog.</li>
+                        <li>Almost 80% of the time we find that the solution to people's issues can be solved with a simple "Google Search". You might want to try that before seeking support. You might be able to fix the issue yourself much quicker than we can respond to your request.</li>
+                        <li>Make sure to state the name of the Template you are having issues with when requesting support via ThemeForest.</li>
+                    </ul>
+                </div>
+                
+
+                <div class="bg-slate-200 py-12 px-6 text-center text-2xl font-semibold rounded-md mt-20 mx-4">
+                    <i class="far fa-handshake text-primary fa-2x"></i> <br>
+                    Thanks again for purchasing <b>Minfo</b> Template.
+                </div>
+            </div>
+            <!-- Main content  End -->
+
+            <div class="right-sidebar lg:max-2xl:col-span-9 lg:max-2xl:col-start-4 2xl:col-span-2">
+                <div class="sticky top-28 px-6 transition-all duration-300">
+                    <div class="box relative border border-sky-400 rounded-lg p-6">
+                        <div class="title text-md font-bold mb-3 text-sky-400">NEED A CUSTOM PROJECT?</div>
+                        <p>
+                            If you have a custom project / template or need any custom development services, Feel free to contact us.
+                        </p>
+                        <div class="text-center mt-4">
+                            <a href="mailto:themearray@gmail.com" class="text-white bg-sky-500 px-5 py-2 rounded-md">
+                                Email Us
+                                <i class="fal fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+
+
+    
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/tw-elements.umd.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

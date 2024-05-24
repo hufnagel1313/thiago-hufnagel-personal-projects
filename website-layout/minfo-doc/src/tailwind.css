@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --primaryColor: #FC2248;
+        --secondaryColor: #7A75FF;
+        --salmon: #FF8268;
+        --olive: #404040;
+        --dark: #18191A;
+        --text-color_dark: #979899;
+    }
+    html {
+        -webkit-text-size-adjust: 100%;
+    }
+    body {
+        @apply box-border leading-1.7;
+    }
+    svg, img {
+        @apply inline;
+    }
+    label {
+        @apply inline-block leading-none text-base;
+    }
+    p {        
+        @apply text-black leading-1.7;
+    }
+    ul {
+        @apply leading-[2em]
+    }
+    h1 {
+        line-height: 1.23;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-sarabun ;
+    }
+
+    input {
+        @apply shadow-none outline-none;
+    }    
+    .form-control:not(textarea) {
+        @apply bg-whiteshadow-none outline-0 px-6 py-4 h-20 block w-full appearance-none font-normal leading-normal transition-all rounded-md text-base dark:text-color_dark border border-slate-300 dark:border-gray-500;
+    }
+    textarea {
+        @apply bg-white dark:bg-transparent shadow-none outline-0 px-6 py-4 block w-full appearance-none font-normal leading-normal transition-all rounded-md text-base dark:text-color_dark border border-slate-300 dark:border-gray-500;
+    }
+    input:focus, textarea:focus {
+        box-shadow: none !important;
+        outline: none !important;
+        @apply dark:border-primary;
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+        -webkit-text-fill-color: var(--text-color_dark);
+        -webkit-box-shadow: none;
+        transition: background-color 5000s ease-in-out 0s;
+    }
+    .tooltip-inner {
+        @apply !text-xs !px-2 !py-1.5 !bg-secondary;        
+    }
+}
+@layer utilities {
+    .stretched-link::after {
+        @apply absolute inset-0 z-[1] content-[''];
+    }
+    .sidebar .sticky {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .sidebar .sticky::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+}
