@@ -13,9 +13,6 @@ const skills: Skill[] = [
     new Skill('Swift', 2),
     new Skill('Kotlin', 2),
     new Skill('Go', 2),
-    new Skill('Rust', 2),
-    new Skill('Scala', 2),
-    new Skill('Perl', 2),
 ];
 
 async function getSkill(id: number): Promise<Skill | undefined> {
