@@ -1,6 +1,7 @@
 import { Provider } from "react-redux";
 import { store } from "../state";
-import SidebarProfile from "./SidebarProfile";
+import SidebarProfile from "./SidebarProfile/SidebarProfile";
+import SectionChatbot from "./Sections/SectionChatbot";
 
 export const App = () => {
   return (
@@ -370,6 +371,7 @@ export const App = () => {
 
           {/* Main Content Start */}
           <div className="relative mx-auto minfo__contentBox max-w-container xl:max-2xl:max-w-65rem">
+            <SectionChatbot />
             {/* Hero/Introduction Section Start */}
             <div
               data-scroll-index="0"
