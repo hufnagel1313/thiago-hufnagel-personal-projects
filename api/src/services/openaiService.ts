@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const apiKey = process.env.API_KEY;
+const apiKey = process.env.OPEN_AI_API_KEY;
 const openai = new OpenAI({
     apiKey: apiKey,
 });
