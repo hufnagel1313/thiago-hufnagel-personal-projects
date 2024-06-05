@@ -45,10 +45,12 @@ async function deleteSkill(req: Request, res: Response, next: NextFunction) {
         res.sendStatus(404);
 }
 
-export default {
+const skillController = {
     getSkill,
     getSkills,
     postSkill,
     patchSkill,
     deleteSkill
-}
+};
+
+export default skillController;

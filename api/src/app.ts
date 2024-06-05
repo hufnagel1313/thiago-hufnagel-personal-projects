@@ -4,9 +4,11 @@ import 'express-async-errors';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import skillrouter from './routers/SkillRouter';
+import chatbotRouter from './routers/ChatbotRouter';
 import dotenv from 'dotenv';
 
 dotenv.config();
+
 const PORT = parseInt(`${process.env.PORT || 8080}`);
 
 const app = express();
@@ -21,6 +23,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/skills/', skillrouter);
+app.use('/chatbot/', chatbotRouter);
 
 
 app.listen(PORT, () => console.log(`Server is running at ${PORT}.`));

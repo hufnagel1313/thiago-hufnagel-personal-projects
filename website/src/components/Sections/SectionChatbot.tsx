@@ -77,7 +77,6 @@ const SectionChatbot: React.FC = () => {
                 </div>
               </div>
             </div>
-            <br />
           </div>
 
           <div className="typing-area">
