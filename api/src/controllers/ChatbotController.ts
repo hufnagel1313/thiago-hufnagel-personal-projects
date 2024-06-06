@@ -37,14 +37,13 @@ Please ensure the answers are tailored to the details from the resume, showcasin
 `;
 
 async function handleMessage(req: any, res: any) {
-    const content = req.body.message;
-    const chatLog = req.body.chatLog;
+    const { message, chatLog } = req.body;
 
-    if (content.trim() === "") {
+    if (!message || message.trim() === "") {
         return res.status(400).json({ error: "Empty message" });
     }
 
-    const response = await callGPT(content, system, chatLog);
+    const response = await callGPT(message, system, chatLog);
 
     return res.json({ message: response });
 }

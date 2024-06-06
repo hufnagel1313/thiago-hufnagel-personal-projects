@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
-import occasionsReducer from "./occasionsReducer";
+import chatbotReducer from "./chatbotReducer";
 
 const reducers = combineReducers({
-    occasions: occasionsReducer
+    chatbot: chatbotReducer
 });
 
 export default reducers;

@@ -1,5 +1,5 @@
 export enum ActionTypes {
-    SEARCH_OCCASIONS_REQUEST = 'search_occasions_request',
-    SEARCH_OCCASIONS_SUCCESS = 'search_occasions_success',
-    SEARCH_OCCASIONS_ERROR = 'search_occasions_error'
+    POST_CHATBOT_MESSAGE = 'post_message',
+    POST_CHATBOT_MESSAGE_SUCCESS = 'post_message_success',
+    POST_CHATBOT_MESSAGE_ERROR = 'post_message_error'
 }

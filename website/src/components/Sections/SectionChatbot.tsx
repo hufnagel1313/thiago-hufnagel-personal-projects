@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import { useActions } from "../../hooks/useActions";
+import { useTypedSelector } from "../../hooks/userTypedSelector";
 import "./SectionChatbot.css";
 
 const SectionChatbot: React.FC = () => {
-  // Your component logic goes here
+  const [message, setMessage] = useState("");
+  const { postMessage } = useActions();
+  const { data, error, loading } = useTypedSelector((state) => state.chatbot);
+
+  const handleTextChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setMessage(event.target.value);
+  };
+
+  const handleSendMessageClick = (
+    event: React.MouseEvent<HTMLButtonElement>
+  ) => {
+    event.preventDefault();
+    postMessage(message, "");
+  };
 
   return (
     <div
@@ -81,11 +96,17 @@ const SectionChatbot: React.FC = () => {
 
           <div className="typing-area">
             <div className="input-field">
-              <input type="text" placeholder="Type your message" required />
+              <input
+                type="text"
+                onChange={handleTextChange}
+                placeholder="Type your message"
+                required
+              />
               <button
-                type="submit"
+                type="button"
                 className="inline-flex items-center gap-2 text-[15px] font-medium border border-theme bg-theme text-white py-4.5 px-9 rounded-4xl leading-none transition-all duration-300 hover:bg-themeHover hover:border-themeHover"
                 aria-label="Send Message"
+                onClick={handleSendMessageClick}
               >
                 Send Message
               </button>

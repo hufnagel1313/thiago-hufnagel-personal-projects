@@ -9,7 +9,7 @@ const openai = new OpenAI({
     apiKey: apiKey,
 });
 
-async function callGPT(promptContent: any, systemContent: any, previousChat: any) {
+async function callGPT(promptContent: string, systemContent: string, previousChat: string) {
 
     const messages: ChatCompletionMessageParam[] = [];
 
@@ -25,7 +25,7 @@ async function callGPT(promptContent: any, systemContent: any, previousChat: any
 
     const assistantPrompt: ChatCompletionMessageParam = {
         role: "assistant",
-        content: previousChat,
+        content: previousChat || "",
     };
 
     messages.push(userPrompt);
@@ -36,7 +36,7 @@ async function callGPT(promptContent: any, systemContent: any, previousChat: any
         try {
             const response = await openai.chat.completions.create({
                 // model: "gpt-4", // Switch to different models if necessary
-                model: "gpt-3.5-turbo-0125",
+                model: "gpt-3.5-turbo",
                 messages: messages
             });
 
