@@ -1,9 +1,7 @@
-import { OccassionModel } from '../../models/OccasionModel';
 import { ActionTypes } from '../action-types'
 
 interface PostChatbotMessageAction {
     type: ActionTypes.POST_CHATBOT_MESSAGE;
-    payload: string;
 }
 
 interface PostChatbotMessageSuccessAction {

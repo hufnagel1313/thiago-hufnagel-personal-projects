@@ -1,23 +1,59 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useActions } from "../../hooks/useActions";
 import { useTypedSelector } from "../../hooks/userTypedSelector";
 import "./SectionChatbot.css";
+import { MessageModel } from "../../models/MessageModel";
+import BotMessage from "./BotMessage/BotMessage";
+import { v4 as uuidv4 } from "uuid";
 
 const SectionChatbot: React.FC = () => {
-  const [message, setMessage] = useState("");
+  const [userMessage, setUserMessage] = useState("");
+  const [messageList, setMessageList] = useState([] as MessageModel[]);
   const { postMessage } = useActions();
   const { data, error, loading } = useTypedSelector((state) => state.chatbot);
 
-  const handleTextChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setMessage(event.target.value);
+  const handleTextChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setUserMessage(event.target.value);
+  };
+
+  const convertMessgeListToString = (messageList: MessageModel[]) => {
+    return messageList
+      .map((message) => {
+        return `${message.role}: ${message.content}`;
+      })
+      .join("\n");
   };
 
   const handleSendMessageClick = (
     event: React.MouseEvent<HTMLButtonElement>
   ) => {
     event.preventDefault();
-    postMessage(message, "");
+    if (!userMessage) return;
+    const message = {
+      id: uuidv4(),
+      date: new Date(),
+      role: "user",
+      content: userMessage,
+    };
+    setMessageList([...messageList, message]);
+    const messageListString = convertMessgeListToString(messageList);
+    postMessage(userMessage, messageListString);
+    setUserMessage("");
   };
+
+  useEffect(() => {
+    console.log("data", data);
+    if (data) {
+      const message = {
+        id: uuidv4(),
+        date: new Date(),
+        role: "bot",
+        content: data,
+      };
+      setMessageList([...messageList, message]);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [data]);
 
   return (
     <div
@@ -45,62 +81,29 @@ const SectionChatbot: React.FC = () => {
           <div className="title">
             Thiago Hufnagel's <span>_bot</span>
           </div>
-          <div className="box">
-            <div>
-              <div className="item left">
-                <div className="pt-2">
-                  <img className="icon" src="assets/img/me.png" alt="bot me" />
-                </div>
-                <div className="msg">
-                  <p>
-                    Hello everyone, How are you? Hello everyone, How are you?
-                    Hello everyone, How are you? Hello everyone, How are you?
-                    Hello everyone, How are you? Hello everyone, How are you?
-                    Hello everyone, How are you? Hello everyone, How are you?
-                    Hello everyone, How are you?
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="item right">
-                <div className="msg">
-                  <p>
-                    {" "}
-                    Hello everyone, How are you? Hello everyone, How are you?
-                    Hello everyone, How are you? Hello everyone, How are you?
-                    Hello everyone, How are you? Hello everyone, How are you?
-                    Hello everyone, How are you? Hello everyone, How are you?
-                    Hello everyone, How are you?
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="item left">
-                <div className="pt-2">
-                  <img className="icon" src="assets/img/me.png" alt="bot me" />
-                </div>
-                <div className="msg">
-                  <p>
-                    Hello everyone, How are you? Hello everyone, How are you?
-                    Hello everyone, How are you? Hello everyone, How are you?
-                    Hello everyone, How are you? Hello everyone, How are you?
-                    Hello everyone, How are you? Hello everyone, How are you?
-                    Hello everyone, How are you?
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div className="chat-box">
+            <BotMessage role="bot" content="Hello, how can I help you?" />
+            {messageList.map((message) => (
+              <BotMessage
+                key={message.id}
+                role={message.role as "user" | "bot"}
+                content={message.content}
+              />
+            ))}
           </div>
 
           <div className="typing-area">
             <div className="input-field">
-              <input
-                type="text"
+              <textarea
                 onChange={handleTextChange}
                 placeholder="Type your message"
                 required
+                value={userMessage}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter") {
+                    handleSendMessageClick(event as any);
+                  }
+                }}
               />
               <button
                 type="button"
@@ -108,7 +111,7 @@ const SectionChatbot: React.FC = () => {
                 aria-label="Send Message"
                 onClick={handleSendMessageClick}
               >
-                Send Message
+                <i className="fa fa-chevron-right"></i>
               </button>
             </div>
           </div>

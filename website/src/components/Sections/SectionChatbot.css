@@ -16,15 +16,17 @@
     color: #00bc92;
 }
 
-.wrapper .box {
+.wrapper .chat-box {
     border: 1px solid #2d2e2f;
     padding: 10px 15px 10px 15px;
     min-height: 400px;
     max-height: 400px;
     overflow-y: auto;
+    display: inline-grid;
+    width: 100%;
 }
 
-.wrapper .box .item {
+.wrapper .chat-box .item {
     display: flex;
     float: left;
     margin: 10px 0;
@@ -32,36 +34,36 @@
     clear: both;
 }
 
-.wrapper .box .item .icon {
+.wrapper .chat-box .item .icon {
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
 
-.wrapper .box .item .msg {
+.wrapper .chat-box .item .msg {
     border-radius: 10px;
     width: 80%;
     margin-left: 10px;
 }
 
-.wrapper .box .item .msg p {
+.wrapper .chat-box .item .msg p {
     padding: 5px 10px 5px 10px;
 }
 
-.wrapper .box .item.right {
+.wrapper .chat-box .item.right {
     float: right;
 }
 
-.wrapper .box .item.left .msg {
+.wrapper .chat-box .item.left .msg {
     background-color: #0b6854;
 }
 
-.wrapper .box .item.right .msg {
+.wrapper .chat-box .item.right .msg {
     border: 1px solid #58616b;
     margin-left: 20%;
 }
 
-.wrapper .box .item.left .msg p {
+.wrapper .chat-box .item.left .msg p {
     color: white !important;
 }
 
@@ -81,25 +83,29 @@
     position: relative;
 }
 
-.wrapper .typing-area .input-field input {
+.wrapper .typing-area .input-field textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid transparent;
     border-radius: 3px;
     outline: none;
-    padding-right: 70px;
+    padding-right: 50px;
     font-family: 'Poppins', sans-serif;
     transition: 0.3s all ease;
+    height: 40px;
+    overflow-y: hidden;
+    resize: none;
+    margin-top: 10px;
 }
 
 .wrapper .typing-area .input-field button {
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: 0px;
     transform: translateY(-50%);
     background: transparent;
     border: 1px solid #00bc92;
-    padding: 5px 10px;
+    padding: 5px 12px 5px 14px;
     border-radius: 1rem;
     color: #00bc92;
     outline: none;
@@ -114,7 +120,7 @@
     color: white;
 }
 
-.wrapper .typing-area .input-field input:valid~button {
+.wrapper .typing-area .input-field textarea:valid~button {
     background: #00bc92;
     color: white;
     pointer-events: auto;

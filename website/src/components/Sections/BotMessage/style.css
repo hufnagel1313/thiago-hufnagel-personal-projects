@@ -1,0 +1,40 @@
+.wrapper .chat-box .item {
+    display: flex;
+    float: left;
+    margin: 10px 0;
+    max-width: 95%;
+    clear: both;
+}
+
+.wrapper .chat-box .item .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.wrapper .chat-box .item .msg {
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 10px;
+}
+
+.wrapper .chat-box .item .msg p {
+    padding: 5px 10px 5px 10px;
+}
+
+.wrapper .chat-box .item.user {
+    float: right;
+}
+
+.wrapper .chat-box .item.bot .msg {
+    background-color: #0b6854;
+}
+
+.wrapper .chat-box .item.user .msg {
+    border: 1px solid #58616b;
+    display: inline-table;
+}
+
+.wrapper .chat-box .item.bot .msg p {
+    color: white !important;
+}
