@@ -9,7 +9,7 @@ const openai = new OpenAI({
     apiKey: apiKey,
 });
 
-async function callGPT(promptContent: string, systemContent: string, previousChat: string) {
+export async function callGPT(promptContent: string, systemContent: string, previousChat: string): Promise<string> {
 
     const messages: ChatCompletionMessageParam[] = [];
 
@@ -43,7 +43,6 @@ async function callGPT(promptContent: string, systemContent: string, previousCha
             return response.choices[0].message.content;
         } catch (error) {
             console.error("Error:", error);
-            console.error('Error creating chat completion:', error);
             return "Error creating chat completion";
         }
     };
@@ -51,5 +50,3 @@ async function callGPT(promptContent: string, systemContent: string, previousCha
     const result = await createChatCompletion();
     return result;
 }
-
-module.exports = { callGPT };

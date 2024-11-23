@@ -18,11 +18,12 @@
 
 .wrapper .chat-box {
     border: 1px solid #2d2e2f;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 10px 10px 15px;
     min-height: 400px;
     max-height: 400px;
+    display: grid;
     overflow-y: auto;
-    display: inline-grid;
+    scroll-behavior: smooth;
     width: 100%;
 }
 
@@ -44,6 +45,7 @@
     border-radius: 10px;
     width: 80%;
     margin-left: 10px;
+    min-width: 110px;
 }
 
 .wrapper .chat-box .item .msg p {

@@ -1,19 +1,20 @@
-import Skill from "../models/Skill";
+import { Skill } from "../models/Skill";
 
 const skills: Skill[] = [
-    new Skill('JavaScript', 5),
-    new Skill('TypeScript', 4),
-    new Skill('Python', 3),
-    new Skill('Java', 3),
-    new Skill('C#', 3),
-    new Skill('C++', 2),
-    new Skill('C', 2),
-    new Skill('Ruby', 2),
-    new Skill('PHP', 2),
-    new Skill('Swift', 2),
-    new Skill('Kotlin', 2),
-    new Skill('Go', 2),
-    new Skill('Rust', 2),
+    { id: 1, name: 'JavaScript', level: 5 },
+    { id: 2, name: 'JavaScript', level: 5 },
+    { id: 3, name: 'TypeScript', level: 4 },
+    { id: 4, name: 'Python', level: 3 },
+    { id: 5, name: 'Java', level: 3 },
+    { id: 6, name: 'C#', level: 3 },
+    { id: 7, name: 'C++', level: 2 },
+    { id: 8, name: 'C', level: 2 },
+    { id: 9, name: 'Ruby', level: 2 },
+    { id: 10, name: 'PHP', level: 2 },
+    { id: 11, name: 'Swift', level: 2 },
+    { id: 12, name: 'Kotlin', level: 2 },
+    { id: 13, name: 'Go', level: 2 },
+    { id: 14, name: 'Rust', level: 2 },
 ];
 
 async function getSkill(id: number): Promise<Skill | undefined> {
@@ -33,7 +34,7 @@ async function addSkill(skill: Skill): Promise<Skill> {
         if (!skill.name || !skill.level)
             return reject(new Error(`Invalid skill.`));
 
-        const newSkill = new Skill(skill.name, skill.level);
+        const newSkill = { id: skills.length + 1, name: skill.name, level: skill.level };
         skills.push(newSkill);
 
         return resolve(newSkill);
@@ -69,11 +70,13 @@ async function deleteSkill(id: number): Promise<boolean> {
     })
 }
 
-export default {
+const skillRepository = {
     getSkill,
     getSkills,
     deleteSkill,
     addSkill,
     updateSkill
-}
+};
+
+export default skillRepository;
 

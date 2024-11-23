@@ -1,7 +1,9 @@
 import { Provider } from "react-redux";
 import { store } from "../state";
+import SectionAboutMe from "./Sections/SectionAboutMe/SectionAboutMe";
+import SectionChatbot from "./Sections/SectionChatbot/SectionChatbot";
 import SidebarProfile from "./SidebarProfile/SidebarProfile";
-import SectionChatbot from "./Sections/SectionChatbot";
+import SectionContactMe from "./Sections/SectionContactMe/SectionContactMe";
 
 export const App = () => {
   return (
@@ -26,7 +28,7 @@ export const App = () => {
                 href="index.html"
                 className="flex items-center gap-2 text-black dark:text-white"
               >
-                <img src="assets/img/site-logo.svg" alt="Minfo" />
+                <img src="assets/img/site-logo.svg" alt="Thiago Hufnagel" />
                 <span>Thiago Hufnagel</span>
               </a>
             </div>
@@ -372,6 +374,8 @@ export const App = () => {
           {/* Main Content Start */}
           <div className="relative mx-auto minfo__contentBox max-w-container xl:max-2xl:max-w-65rem">
             <SectionChatbot />
+            <SectionAboutMe />
+            <SectionContactMe />
             {/* Hero/Introduction Section Start */}
             <div
               data-scroll-index="0"

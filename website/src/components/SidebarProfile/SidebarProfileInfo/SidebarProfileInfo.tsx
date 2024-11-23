@@ -18,9 +18,9 @@ const SidebarProfileInfo: React.FC = () => {
         </li>
         <li className="flex text-sm">
           <span className="flex-1 font-medium text-black dark:text-white">
-            Age:
+            Timezone:
           </span>
-          <span>41</span>
+          <span>GMT-3</span>
         </li>
       </ul>
     </div>

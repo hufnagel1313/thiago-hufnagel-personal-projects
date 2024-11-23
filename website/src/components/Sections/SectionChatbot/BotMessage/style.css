@@ -24,6 +24,8 @@
 
 .wrapper .chat-box .item.user {
     float: right;
+    display: flex;
+    justify-content: end;
 }
 
 .wrapper .chat-box .item.bot .msg {

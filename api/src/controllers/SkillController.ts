@@ -1,6 +1,6 @@
 
 import { Request, Response, NextFunction } from 'express';
-import Skill from '../models/Skill';
+import { Skill } from '../models/Skill';
 import skillRepository from '../repositories/SkillRepository';
 
 async function getSkill(req: Request, res: Response, next: NextFunction) {

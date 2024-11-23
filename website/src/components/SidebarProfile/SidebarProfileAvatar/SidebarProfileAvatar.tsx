@@ -25,9 +25,9 @@ const SidebarProfileAvatar: React.FC = () => {
       </h6>
       <div className="leading-none cd-headline clip is-full-width">
         <h6 className="text-sm cd-words-wrapper designation text-theme after:!bg-theme">
-          <b className="font-normal is-visible">Software Engineer</b>
+          <b className="font-normal">Tech Lead</b>
+          <b className="font-normal is-visible">Software Engineer Specialist</b>
           <b className="font-normal">Full Stack</b>
-          <b className="font-normal">Devops</b>
         </h6>
       </div>
     </div>
